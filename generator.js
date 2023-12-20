@@ -3,8 +3,8 @@ const fs = require('fs');
 const pos = require('pos');
 
 // reading in source text files
-const wellnessContent = fs.readFileSync('wellness.txt', 'utf-8');
-const securityContent = fs.readFileSync('security.txt', 'utf-8');
+const wellnessContent = fs.readFileSync('texts/wellness.txt', 'utf-8');
+const securityContent = fs.readFileSync('texts/security.txt', 'utf-8');
 
 // breaking texts into sentences
 const wellnessSentences = wellnessContent.split('\n').filter(Boolean);
